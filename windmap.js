@@ -4764,14 +4764,14 @@ var cities = [
 		state: 'Kansas',
 		lat: 39.111929,
 		lon: -100.362690806525322,
-		pop: 7297
+		pop: 126
 	},
 	{
 		city: 'Park City',
 		state: 'Kansas',
 		lat: 37.818855,
 		lon: -97.321846761176715,
-		pop: 126
+		pop: 7297
 	},
 	{
 		city: 'Parker',
