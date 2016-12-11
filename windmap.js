@@ -1078,7 +1078,7 @@ MotionDisplay.prototype.move = function(animator) {
 };
 
 MotionDisplay.prototype.moveThings = function(animator) {
-	var speed = 0.01 * this.speedScale / animator.scale;
+	var speed = 0.005 * this.speedScale / animator.scale;
 	for (var i = 0; i < this.particles.length; i++) {
 		var p = this.particles[i];
 		if (p.age > 0 && this.field.inBounds(p.x, p.y)) {
@@ -6147,7 +6147,7 @@ function init() {
 
 	var canvas = document.getElementById('display');
 	var imageCanvas = document.getElementById('image-canvas');
-	var mapProjection = new ScaledAlbers(8850, 0, canvas.height - 8, -102, 36.99);
+	var mapProjection = new ScaledAlbers(8850, 0, canvas.height - 8, -102, 37.05);
 
 	var isMacFF = navigator.platform.indexOf('Mac') != -1 && navigator.userAgent.indexOf('Firefox') != -1;
 	var isWinFF = navigator.platform.indexOf('Win') != -1 && navigator.userAgent.indexOf('Firefox') != -1;
@@ -6179,7 +6179,7 @@ function init() {
 	var legendAnimator = new Animator(null, isAnimating);
 
 	var speedScaleFactor = 20 * 2.23693629;
-	speedScaleFactor = 10 * 2.23693629;
+	speedScaleFactor = 20 * 2.23693629;
 	for (var i = 1; i <= legendSpeeds.length; i++) {
 		var c = document.getElementById('legend' + i);
 		var legendField = VectorField.constant(legendSpeeds[i - 1] * speedScaleFactor, 0, 0, 0, c.width, c.height);

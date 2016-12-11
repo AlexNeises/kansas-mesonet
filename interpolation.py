@@ -53,7 +53,7 @@ if __name__ == '__main__':
 	newtm = re.sub('[^0-9]', '', tm)
 
 	# TEMPORARY
-	# newtm = '20161209110500'
+	# newtm = '20161210142500'
 
 	data_url = 'http://mesonet.k-state.edu/rest/stationdata/?stn=all&int=5min&t_start=' + newtm + '&t_end=' + newtm
 	data_response = urllib2.urlopen(data_url)
@@ -68,7 +68,7 @@ if __name__ == '__main__':
 			data_weather_data.append(row[11])
 			data_weather_dat2.append(row[15])
 		except IndexError:
-			print 'Data not available, try again in 1 minute.'
+			print '\033[91mData not available, try again in 1 minute.\033[0m'
 			keepgoing = False
 
 	usable_station_data = []
@@ -97,8 +97,8 @@ if __name__ == '__main__':
 			values.append(float(row[2]))
 			value2.append(float(row[3]))
 
-		power = 8
-		smoothing = 8
+		power = 5
+		smoothing = 7
 
 		ti = np.linspace(0, 100, 100)
 		XI, YI = np.meshgrid(ti, ti)
