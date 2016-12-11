@@ -2,6 +2,8 @@
 ### Version 1.0.2
 
 ## CHANGELOG
+* 1.0.3
+    - Added new data and modified existing structure
 * 1.0.2
     - Updated incorrect city data
 * 1.0.1
