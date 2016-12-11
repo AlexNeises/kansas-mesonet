@@ -1,7 +1,9 @@
 # Kansas Mesonet
-### Version 1.0.4
+### Version 1.0.5
 
 ## CHANGELOG
+* 1.0.5
+    - Modified gitignore to include minified files
 * 1.0.4
     - Added minified files and new data
 * 1.0.3
