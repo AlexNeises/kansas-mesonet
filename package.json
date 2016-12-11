@@ -1,0 +1,14 @@
+{
+  "name": "kansas-mesonet",
+  "description": "Kansas Mesonet Maps",
+  "version": "1.0.3",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-shell": "^2.1.0"
+  }
+}
